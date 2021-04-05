@@ -13,7 +13,7 @@ function HomePage(props) {
         <div className = "bg h-auto text-light" >
             <Header/>
             <Hero title={props.title} />
-            <Container fluid={true} >
+            <Container className= "vh-100" fluid={true} >
                <Row className=" d-inline justify-content-around">
                     <img src={me} alt="Benjamin Domschot" />
                 <p className = "d-inline text-muted"> 

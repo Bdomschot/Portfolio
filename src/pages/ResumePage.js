@@ -9,9 +9,10 @@ function ResumePage (props) {
 
     return(
         <div className = "bg text-light h-auto">
+        
         <Header/>
          <Hero title={props.title} />
-         <Container className="justify-content-center h-100">
+         <Container className="justify-content-center vh-100" >
             <iframe title = "Resume" src = {Resume} width ="80%" height= "100%" ></iframe>
          </Container>
          <Footer />

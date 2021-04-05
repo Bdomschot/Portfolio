@@ -3,12 +3,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import inspect from '../assets/images/inspect.png'
 import food from '../assets/images/Food.png'
 import pub from '../assets/images/PubLish.png'
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function Slider(){
     
         return (
 <Container  className="w-responsive text-center mx-auto h-50 p-3 mt-2">
+  <Row>
+    <Col sm = {8}>
 <Carousel fade>
   <Carousel.Item>
     <img
@@ -55,6 +57,8 @@ function Slider(){
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</Col>
+</Row>
 </Container>
             
         )
