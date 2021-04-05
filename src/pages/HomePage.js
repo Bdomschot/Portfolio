@@ -11,7 +11,7 @@ function HomePage(props) {
     return (
         <div className = "bg text-muted" >
             <Header/>
-            <Hero title={props.title} className = "text-muted"/>
+            <Hero title={props.title} />
             <Container fluid={true} >
                <Row className="justify-content-around">
                     <img src={me} alt="Benjamin Domschot" />
