@@ -46,7 +46,6 @@ class App extends React.Component {
             <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}  />} />
             <Route path="/resume" exact render={() => <ResumePage title={this.state.resume.title}  />} />
             <Route path="/portfolio" exact render={() => <PortfolioPage title={this.state.portfolio.title}  />} />
-            <Footer />
       </Router>
     );
   }

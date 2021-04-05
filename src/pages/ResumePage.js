@@ -3,16 +3,18 @@ import Hero from '../components/Hero';
 import Resume from "../assets/images/Resume.pdf";
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
+import Footer from '../components/Footer'
 
 function ResumePage (props) {
 
     return(
-        <div className = "bg">
+        <div className = "bg h-100vh">
             <Header/>
          <Hero title={props.title} />
-         <Container className="justify-content-center">
-         <a href={Resume} download="Resume.pdf" style={{color:"black", fontSize:"25px" }}>Download</a>
+         <Container className="justify-content-center h-100">
+            <iframe title = "Resume" src = {Resume} width ="80%" height= "100%" ></iframe>
          </Container>
+         <Footer />
          </div>
         
     )

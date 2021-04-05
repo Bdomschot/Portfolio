@@ -9,7 +9,7 @@ function Footer() {
 
     return (
         <footer className="mt-5" >
-            <Container fluid={true}>
+            <Container style={{backgroundColor: 'transparent'}} fluid={true}>
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-o" md={3} sm={12}>
                     <a className='text-link' href="mailto:bdomschot@gmail.com">Questions or comments.</a>
