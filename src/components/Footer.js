@@ -8,7 +8,7 @@ import '../index.css';
 function Footer() {
 
     return (
-        <footer className="mt-5" >
+        <footer className="d-block mt-5" >
             <Container style={{backgroundColor: 'transparent'}} fluid={true}>
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-o" md={3} sm={12}>

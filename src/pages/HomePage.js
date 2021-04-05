@@ -4,18 +4,19 @@ import Row from 'react-bootstrap/Row';
 import Hero from '../components/Hero';
 import me from '../assets/images/photo.jpg'
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function HomePage(props) {
 
     
     return (
-        <div className = "bg text-muted" >
+        <div className = "bg h-auto text-light" >
             <Header/>
             <Hero title={props.title} />
             <Container fluid={true} >
-               <Row className="justify-content-around">
+               <Row className=" d-inline justify-content-around">
                     <img src={me} alt="Benjamin Domschot" />
-                <p className = "text-muted"> 
+                <p className = "d-inline text-muted"> 
                     Hello my name is Benjamin Domschot, I am a recent graduate of University of Washington full stack web developer boot camp. 
                     As a father of two looking to change careers, I have always had an interest in coding. 
                     I am now seeking new employment utilizing the skill I learned and 
@@ -23,6 +24,7 @@ function HomePage(props) {
                 </p>
                 </Row>
             </Container>
+            <Footer/>
         </div>
     )
  

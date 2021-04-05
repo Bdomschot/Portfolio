@@ -12,7 +12,6 @@ function Hero(props) {
                 <Row className="justify-content-center py-2">
                     <Col md={8} sm={12} className = "text-muted">
                         { props.title && <h1 className="display-3 font-weight-bolder">{props.title}</h1>  }
-                        { props.subtitle && <h3 className="display-5 font-weight-light">{props.subtitle}</h3>  }
                     </Col>
                 </Row>
             </Container>

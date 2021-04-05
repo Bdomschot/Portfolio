@@ -4,14 +4,15 @@ import Content from '../components/Content';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-function ContactPage() {
+function ContactPage(props) {
 
     
         return (
-            <div className= "bg">
+            <div className = "bg text-light">
                 <Header/>
-                <Hero />
+                <Hero title= {props.title} />
                 <Content>
                     <Container fluid={true}>
                         <Row className="border-top justify-content-between p-3">
@@ -21,6 +22,7 @@ function ContactPage() {
                         </Row>
                     </Container>
                 </Content>
+                <Footer/>
             </div>
         )
     

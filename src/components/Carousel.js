@@ -12,7 +12,7 @@ function Slider(){
 <Carousel fade>
   <Carousel.Item>
     <img
-      className="d-block w-100 mh-75"
+      className="d-block w-100 h-75"
       src= {inspect}
       alt="inspectNow"
     />

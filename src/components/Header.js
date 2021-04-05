@@ -8,13 +8,13 @@ import { NavDropdown } from 'react-bootstrap';
 
 function Header(){
     return(
-    <Container className="p-o" style={{backgroundColor: 'dark'}}>
+    <Container className="p-o" >
           <Navbar collapseOnSelect className="border-bottom" bg="transparent" expand="lg" >
-            <Navbar.Brand>Benjamin Domschot</Navbar.Brand>
+            <Navbar.Brand className = "text-muted">Benjamin Domschot</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                    <NavDropdown title="More" id="basic-nav-dropdown">
+                    <NavDropdown className = "text-muted" title="More" id="basic-nav-dropdown">
                       <NavDropdown.Item href="/">Home</NavDropdown.Item>
                       <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
                       <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
